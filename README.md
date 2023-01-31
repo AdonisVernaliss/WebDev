@@ -1,2 +1,2 @@
 #                                                     WebDev
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Josefin+Sans&weight=300&size=40&pause=1000&color=5009A8&background=D1C9FF00&center=true&vCenter=true&repeat=false&width=500&lines=Web+Development;01001110+01101001+01101000+01101001+01101100+00100000+01101000+01101001+01100011+00101110+00100000+01001101+01101111+01110010+01101111+01101110" alt="Typing SVG" /></a>
+#<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Josefin+Sans&size=40&pause=1000&color=5009A8&background=D1C9FF00&center=true&vCenter=true&repeat=false&width=500&lines=Web+Development;2+1+B+0+3+0+1+4+5" alt="Typing SVG" /></a>
