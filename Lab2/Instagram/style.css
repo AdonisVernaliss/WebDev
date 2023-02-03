@@ -1,5 +1,6 @@
 body {
     background-color: #F5F5F5;
+    font-family: Arial;
 }
 
 .block{
@@ -12,8 +13,9 @@ body {
 
 .photo {
     position: relative;
-    margin-left: 17%;
-    margin-top: 1%;
+    margin-left: 40%;
+    margin-top: 4%;
+    margin-right: -10%;
 }
 
 .container {
@@ -26,7 +28,7 @@ body {
 }
 
 .container img {
-    width: 200px;
+    width: 150px;
     height: auto;
     margin-bottom: 30px;
 }
@@ -50,8 +52,8 @@ body {
     background-color: white;
     padding: 50px;
     border: 1px solid rgba(0, 0, 0, 0.16);
-    width: 270px;
-    height: 400px;
+    width: 245px;
+    height: 325px;
 }
 
 .container #form2{
@@ -61,37 +63,47 @@ body {
     background-color: white;
     padding: 8px;
     border: 1px solid rgba(0, 0, 0, 0.16);
-    width: 353px;
+    width: 327px;
     height: 70px;
     margin-top: 8px;
 }
 
+#form2 p {
+    font-size: 14px;
+}
+
 .container input[type="text"], .container input[type="password"] {
     width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    font-size: 16px;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 12px;
     border: 1px solid rgba(0, 0, 0, 0.16);
+    background-color: #F5F5F5;
 }
 
 .container input[type="submit"] {
-    width: 110%;
+    width: 108%;
     padding: 8px;
-    font-size: 20px;
-    background-color: rgba(56, 151, 240, 0.92);
+    font-size: 16px;
+    background-color: #47afff;;
     color: white;
     border: none;
     border-radius: 10px;
-    cursor: pointer;
 }
 
-.container #or {
-    box-sizing: content-box;
-    display: block;
-    line-height: 18px;
-    position: relative;
+#or {
     color: rgba(44, 44, 44, 0.58);
-    font-size: 18px;
+    font-size: 15px;
+}
+
+#facebookinput {
+    color: #385185;
+    font-size: 16px;
+}
+
+#forgotpasswd {
+    color: #385185;
+    font-size: 14px;
 }
 
 .container p {
@@ -99,7 +111,12 @@ body {
     font-size: 17px;
 }
 
+.container2 p {
+    font-size: 14px;
+}
+
 .container a {
     color: #3897f0;
     text-decoration: none;
+
 }
