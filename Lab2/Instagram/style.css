@@ -35,7 +35,6 @@ body {
 
 .container2 {
     text-align: center;
-    /*align-items: center;*/
     display: flex;
     flex-direction: column;
 }
@@ -53,7 +52,8 @@ body {
     padding: 50px;
     border: 1px solid rgba(0, 0, 0, 0.16);
     width: 245px;
-    height: 325px;
+    height: 300px;
+    line-height: 5px;
 }
 
 .container #form2{
@@ -66,6 +66,7 @@ body {
     width: 327px;
     height: 70px;
     margin-top: 8px;
+    line-height: 20px;
 }
 
 #form2 p {
@@ -118,5 +119,4 @@ body {
 .container a {
     color: #3897f0;
     text-decoration: none;
-
 }
