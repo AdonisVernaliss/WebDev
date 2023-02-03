@@ -2,21 +2,27 @@ body {
     background-color: #F5F5F5;
 }
 
-.photo {
+.block{
     position: absolute;
-    /*display: flex;*/
-    /*flex-direction: column;*/
+}
+.box{
+    display: flex;
+    flex-direction: row;
+}
+
+.photo {
+    position: relative;
     margin-left: 17%;
     margin-top: 1%;
 }
 
 .container {
     display: flex;
-    position: absolute;
+    position: relative;
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    margin-left: 50%;
+    margin-left: 10%;
 }
 
 .container img {
@@ -27,7 +33,14 @@ body {
 
 .container2 {
     text-align: center;
-    align-items: center;
+    /*align-items: center;*/
+    display: flex;
+    flex-direction: column;
+}
+.images {
+    display: flex;
+    flex-direction: row ;
+    margin-right: 40%;
 }
 
 .container form {
