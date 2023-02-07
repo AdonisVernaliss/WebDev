@@ -2,6 +2,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    position: absolute;
 }
 
 .container {
@@ -28,11 +29,13 @@ header {
     flex-direction: row;
     font-weight: 400;
     line-height: 1.5;
+
 }
 
 nav {
     margin-left: 6%;
     margin-top: 12px;
+    position: absolute;
 }
 
 nav img {
@@ -40,7 +43,7 @@ nav img {
 }
 .shell-menu2 {
     margin-top: -8px;
-    margin-left: 420px;
+    margin-left: 920px;
 }
 
 .shell-menu2 a{
@@ -61,8 +64,9 @@ nav img {
     text-decoration: underline;
 }
 
+
 .first-img img {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .card-description {
@@ -108,14 +112,14 @@ nav img {
     background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1));
 }
 
-.container-gallery {
+.container-gallery, .container-for-business {
     display: flex;
     flex-direction: row;
     margin-top: 60px;
     margin-left: 60px;
 }
 
-.container-gallery img {
+.container-gallery img, .container-for-business img {
     padding: 15px;
 }
 .card-body h2{
@@ -142,12 +146,12 @@ nav img {
     font-weight: 600;
     line-height: 1.5;
     text-decoration: none;
+    color: #0067b8;
 }
 
 .outlook {
     margin-top: 80px;
     margin-left: 110px;
-    margin-bottom: 7%;
 }
 
 .card-outlook {
@@ -159,4 +163,78 @@ nav img {
 
 .card-outlook p {
     font-size: 1rem;
+}
+
+footer{
+    margin-top: 150px;
+    bottom: 0;
+    width: 100%;
+    color: #616161;
+    background-color: #f3f3f3;
+    position: relative;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 16px;
+}
+footer div{
+    padding-left: 30px;
+    display: flex;
+    background-color: #f3f3f3;
+    flex-direction: row;
+    line-height: 30px;
+}
+footer div ul{
+    margin: 50px 15px;
+    list-style: none;
+}
+
+footer div a {
+    text-decoration: none;
+    color: #616161;
+
+}
+
+footer div a:hover{
+    color: rgba(0,0,0,.9);
+    text-decoration: underline;
+}
+
+
+footer b{
+    color: #616161;
+    font-size: 14px;
+    line-height: 20px;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#bottom-footer a{
+    color:#616161;
+    text-decoration: none;
+}
+#bottom-footer a:hover{
+    text-decoration: underline;
+    color: rgba(0,0,0,.9);
+}
+
+#bottom-footer ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 25px 410px;
+}
+#bottom-footer li a{
+    padding-right: 30px;
+    text-decoration: none;
+    font-size: 11px;
+    line-height: 16px;
+    color: #616161;
+}
+#bottom-footer li a:hover{
+    color: rgba(0,0,0,.9);
+    text-decoration: underline;
+}
+
+#bottom-footer img{
+    width: 15px;
+    margin-right: 7px;
+    margin-top: -5px;
 }
