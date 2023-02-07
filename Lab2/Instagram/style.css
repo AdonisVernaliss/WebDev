@@ -92,9 +92,41 @@ body {
     border-radius: 10px;
 }
 
+#line{
+    border-top: 1px solid #dbdbdb;
+    height:1px;
+    margin: 20px 22px 15px;
+    z-index: 1;
+    padding-right: 120px;
+    padding-left: 83px;
+}
+
 #or {
     color: rgba(44, 44, 44, 0.58);
     font-size: 15px;
+}
+
+#or{
+    background-color: white;
+    text-align: center;
+    position: relative;
+    left:40%;
+    top:-23px;
+    width:50px;
+    z-index: 2;
+}
+
+.facebook-input {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: -15px;
+}
+
+#facebook-logo {
+    width: 19px;
+    margin-right: 7px;
+    position: relative;
+    margin-top: 14px;
 }
 
 #facebookinput {

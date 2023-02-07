@@ -1,0 +1,162 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: block;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #0072C6;
+    padding: 20px;
+}
+
+.heading {
+    text-align: left;
+    font-family: 'Segoe UI',SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+nav {
+    margin-left: 6%;
+    margin-top: 12px;
+}
+
+nav img {
+    margin-bottom: -5px;
+}
+.shell-menu2 {
+    margin-top: -8px;
+    margin-left: 420px;
+}
+
+.shell-menu2 a{
+    text-decoration: none;
+    color: black;
+    padding: 16px 14px 10px;
+    font-size: 13px;
+}
+
+.shell-menu a {
+    text-decoration: none;
+    color: black;
+    padding: 16px 14px 10px;
+    font-size: 13px;
+}
+
+.shell-menu a:hover, .shell-menu2 a:hover {
+    text-decoration: underline;
+}
+
+.first-img img {
+    margin-top: 20px;
+}
+
+.card-description {
+    text-align: left;
+    position: absolute;
+    margin-top: -25%;
+    margin-left: 9%;
+}
+
+#for6 {
+    padding-left: 1.6875em;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+}
+#for6:hover {
+    text-decoration: underline;
+}
+
+.card-body-description {
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.cta-button {
+    background-color: #0067b8;
+    color: #fff;
+    padding: .625rem .75rem;
+    text-decoration: none;
+    border-radius: .125rem;
+    margin-top: 10px;
+    border: .125rem solid transparent;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.cta-button:hover {
+    box-shadow: 0 .125rem .25rem 0 rgba(0,0,0,.13),0 0 .0625rem 0 rgba(0,0,0,.11);
+    background-image: linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1));
+}
+
+.container-gallery {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+
+.container-gallery img {
+    padding: 15px;
+}
+.card-body h2{
+    font-size: 1.8125rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    line-height: 1.2;
+    box-sizing: border-box;
+}
+.card-body {
+    margin-left: 10px;
+}
+.card-body p {
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+}
+
+.card-body a {
+    font-family: "Segoe UI",SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.outlook {
+    margin-top: 80px;
+    margin-left: 110px;
+    margin-bottom: 7%;
+}
+
+.card-outlook {
+    position: absolute;
+    margin-top: -24%;
+    margin-left: 7%;
+    font-size: 1.5rem;
+}
+
+.card-outlook p {
+    font-size: 1rem;
+}
