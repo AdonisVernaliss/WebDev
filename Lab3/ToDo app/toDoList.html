@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      font-family: "Comic Sans MS", fantasy;
+      font-weight: bold;
+    }
+    .todo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .done {
+      text-decoration: line-through;
+      color: rgba(255, 255, 255, 0.16);
+    }
+    .container {
+      width: 500px;
+      margin: 20px auto;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+    form {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; /**/
+      margin-bottom: 40px;
+    }
+    input[type="text"] {
+      width: 70%;
+      padding: 10px;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    /*input[type="submit"] {*/
+    /*  background-color: #333;*/
+    /*  color: #fff;*/
+    /*  border: none;*/
+    /*  cursor: pointer;*/
+    /*}*/
+    ul {
+      list-style: none;
+    }
+    li {
+      background-color: #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+<h1>Todo List</h1>
+<div class="container">
+  <form id="todo-form">
+    <input type="text" id="todo-input" placeholder="Add a new item..." />
+    <button type="submit">Add</button>
+  </form>
+  <ul id="todo-list"></ul>
+</div>
+
+<script>
+  const todoForm = document.querySelector("#todo-form");
+  const todoInput = document.querySelector("#todo-input");
+  const todoList = document.querySelector("#todo-list");
+  let todos = [];
+
+  function renderTodos() {
+    todoList.innerHTML = "";
+    todos.forEach((todo, index) => {
+      const li = document.createElement("li");
+      li.classList.add("todo");
+      if (todo.done) {
+        li.classList.add("done");
+      }
+      li.innerHTML = `
+            <input type="checkbox" ${todo.done ? "checked" : ""} onchange="toggleDone(${index})" />
+            <span>${todo.text}</span>
+            <button onclick="deleteTodo(${index})">Delete</button>
+            `;
+      todoList.appendChild(li);
+    });
+  }
+
+  function addTodo(event) {
+    event.preventDefault();
+    todos.push({ text: todoInput.value, done: false });
+    todoInput.value = "";
+    renderTodos();
+  }
+
+  function toggleDone(index) {
+    todos[index].done = !todos[index].done;
+    renderTodos();
+  }
+
+  function deleteTodo(index) {
+    todos.splice(index, 1);
+    renderTodos();
+  }
+
+  todoForm.addEventListener("submit", addTodo);
+  renderTodos();
+</script>
+</body>
+</html>
