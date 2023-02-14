@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  if (-1 || 0) alert( 'first' ); //yes, -1
+  if (-1 && 0) alert( 'second' ); //no
+  if (null || -1 && 1) alert( 'third' ); //yes, 1
+</script>
+</body>
+</html>

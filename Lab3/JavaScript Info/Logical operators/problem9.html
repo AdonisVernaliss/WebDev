@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+</head>
+<body>
+<script>
+  let login = prompt("Login:");
+  let passwd;
+
+  if (login === "Admin"){
+    passwd = prompt("Your Password:");
+    if (passwd === null || passwd === '') {
+      alert("Canceled")
+    } else if (passwd === "TheMaster") {
+      alert("Welcome!")
+    } else alert("Wrong password")
+  } else alert("Undefined login");
+</script>
+</body>
+</html>
