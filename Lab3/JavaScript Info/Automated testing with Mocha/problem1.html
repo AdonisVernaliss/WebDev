@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script>
+        mocha.setup('bdd');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        let assert = chai.assert;
+    </script>
+
+</head>
+<body>
+<script>
+    descibe("Возводит x в степень n", function () {
+        it("5 в степени 1 будет 5", function () {
+            assert.equal(pow(5, 1), 5)
+        });
+        it("5 в степени 2 будет 25", function () {
+            assert.equal(pow(5, 2), 25)
+        });
+        it("5 в степени 3 будет 125", function () {
+            assert.equal(pow(5, 3), 125)
+        });
+    });
+</script>
+</body>
+</html>
