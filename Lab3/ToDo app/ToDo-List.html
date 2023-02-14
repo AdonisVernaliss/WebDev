@@ -87,7 +87,15 @@
 
     const li = document.createElement('li');
     li.className = 'li';
-    li.textContent = value;
+
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.className = 'checkbox';
+    li.appendChild(checkbox);
+
+    const label = document.createElement('label');
+    label.textContent = value;
+    li.appendChild(label);
 
     const btn = document.createElement('button');
     btn.className = 'btn';
