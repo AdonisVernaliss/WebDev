@@ -31,8 +31,9 @@
     }
 
     .btn {
-      background-color: #b80000;
       cursor: pointer;
+      border: none;
+      background-color: #ddd;
     }
 
     .li {
@@ -57,9 +58,10 @@
     li {
       background-color: #ddd;
       padding: 10px;
-      border-radius: 10px;
-      margin-bottom: 10px;
-      text-align: center;
+      width: 100%;
+      font-size: 15px;
+      border: 1px solid rgba(160, 160, 160, 0.90);
+      border-radius: 3px;
     }
   </style>
 </head>
@@ -98,7 +100,7 @@
 
     const btn = document.createElement('button');
     btn.className = 'btn';
-    btn.textContent = 'Delete';
+    btn.innerHTML = '<img src="trash.png" alt="Delete" width="20">'
     li.appendChild(btn);
     btn.addEventListener('click', (e) => {
       result.removeChild(li);
