@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+  function makeUser() {
+    return {
+      name: "John",
+      ref: this
+    };
+  }
+
+  let user = makeUser();
+
+  alert( user.ref.name ); // Каким будет результат?
+  //this in makeUser() = undefined
+</script>
+</body>
+</html>

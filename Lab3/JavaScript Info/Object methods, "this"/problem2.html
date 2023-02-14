@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+  let calculator = {
+
+    sum() {
+      return a + b;
+    },
+
+    mul() {
+      return a * b;
+    },
+
+    read() {
+      a = +prompt("a:");
+      b = +prompt("b:");
+    },
+
+  };
+
+  calculator.read();
+
+  alert( calculator.sum() );
+  alert( calculator.mul() );
+</script>
+</body>
+</html>
