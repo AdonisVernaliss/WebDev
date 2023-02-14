@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<script>
+    // до вызова функции
+    let menu = {
+        width: 200,
+        height: 300,
+        title: "My menu"
+    };
+
+    function multiplyNumeric(obj) {
+        for (let x in menu) if (typeof obj[x] === 'number') menu[x] = menu[x] * 2
+    }
+
+    multiplyNumeric(menu);
+
+    // после вызова функции
+    // menu = {
+    //   width: 400,
+    //   height: 600,
+    //   title: "My menu"
+    // };
+
+    for (let x in menu) alert(menu[x])
+</script>
+</body>
+</html>
