@@ -32,7 +32,6 @@
 
     .btn {
       background-color: #0067b8;
-      /*border: none;*/
       cursor: pointer;
     }
 
@@ -105,10 +104,13 @@
       result.removeChild(li);
     })
 
-    li.addEventListener('click', (e) => {
-      li.classList.toggle('li-active');
+    checkbox.addEventListener('change', (e) => {
+      if (checkbox.checked) {
+        li.classList.add('li-active');
+      } else {
+        li.classList.remove('li-active');
+      }
     })
-
 
     result.appendChild(li);
   }
