@@ -1,122 +1,22 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <style>
-    * {
-      font-family: "Comic Sans MS", fantasy;
-      font-weight: bold;
-    }
-
-    .container {
-      width: 500px;
-      margin: 20px auto;
-    }
-    h1 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-weight: bold;
-    }
-    form {
-      display: flex;
-      flex-direction: row;
-      justify-content: center; /**/
-      margin-bottom: 40px;
-    }
-    input[type="text"] {
-      width: 70%;
-      padding: 10px;
-      font-size: 16px;
-      margin-right: 10px;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      cursor: pointer;
-      border: none;
-      background-color: #ddd;
-    }
-
-    .li {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .li-active {
-      text-decoration: line-through;
-      color: rgba(44, 44, 44, 0.48);
-    }
-
-    #btn {
-      padding: 10px;
-    }
-
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    li {
-      background-color: #ddd;
-      padding: 10px;
-      width: 100%;
-      font-size: 15px;
-      border: 1px solid rgba(160, 160, 160, 0.90);
-      border-radius: 3px;
-    }
-  </style>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <h1>To-Do List</h1>
+
 <div class="container">
   <input type="text" id="input" placeholder="Add a new item..." />
   <button id="btn" type="submit">Add</button>
   <ul id="result"></ul>
 </div>
 
-<script>
-  const input = document.querySelector("#input");
-  const btn = document.querySelector("#btn");
-  const result= document.querySelector("#result");
-
-  btn.addEventListener('click', (e) => {
-    if (input.value === '') return
-    createDeleteEl(input.value)
-    input.value = '';
-  })
-
-  function createDeleteEl(value){
-
-    const li = document.createElement('li');
-    li.className = 'li';
-
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.className = 'checkbox';
-    li.appendChild(checkbox);
-
-    const label = document.createElement('label');
-    label.textContent = value;
-    li.appendChild(label);
-
-    const btn = document.createElement('button');
-    btn.className = 'btn';
-    btn.innerHTML = '<img src="trash.png" alt="Delete" width="20">'
-    li.appendChild(btn);
-    btn.addEventListener('click', (e) => {
-      result.removeChild(li);
-    })
-
-    checkbox.addEventListener('change', (e) => {
-      if (checkbox.checked) {
-        label.classList.add('li-active');
-      } else {
-        label.classList.remove('li-active');
-      }
-    })
-
-    result.appendChild(li);
-  }
-</script>
+<script src="script.js"></script>
 
 </body>
 </html>
