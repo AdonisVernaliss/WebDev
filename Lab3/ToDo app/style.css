@@ -35,11 +35,6 @@ input[type="text"] {
     background-color: #ddd;
 }
 
-.li {
-    display: flex;
-    justify-content: space-between;
-}
-
 .li-active {
     text-decoration: line-through;
     color: rgba(44, 44, 44, 0.48);
@@ -55,6 +50,8 @@ ul {
     padding: 0;
 }
 li {
+    display: flex;
+    justify-content: space-between;
     background-color: #ddd;
     padding: 10px;
     width: 100%;

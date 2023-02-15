@@ -11,7 +11,6 @@ btn.addEventListener('click', (e) => {
 function createDeleteEl(value){
 
     const li = document.createElement('li');
-    li.className = 'li';
 
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
