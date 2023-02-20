@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'
+import {Component, Input} from '@angular/core'
+import {ICard} from "../models/card";
 
 @Component({
   templateUrl: './card.component.html',
@@ -7,11 +8,7 @@ import { Component } from '@angular/core'
   interpolation: ['{{', '}}']
 })
 export class CardComponent {
+  @Input() card: ICard
 
-  title = "Card Title"
-
-  text = "Hello World!"
-
-  number = 42
-
+  details = false
 }

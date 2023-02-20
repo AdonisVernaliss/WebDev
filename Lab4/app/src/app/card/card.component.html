@@ -1,6 +1,14 @@
 <div class="card">
-  <h2>{{ title }}</h2>
-  <p> {{ text }} </p>
-  <strong> Number: {{ number }}</strong>
+  <img [src]="card.image" [alt]="card.title" width="100">
+  <h2>{{ card.title }}</h2>
+  <p> Price: {{ card.price | currency: 'KZ ' }}</p>
+
+  <button (click)="details = !details">{{ details ? 'Hide' : 'Show'}} Details</button>
+
+  <div *ngIf="details">
+    <p>{{ card.description }}</p>
+    <p>Rate: {{card.rating.rate}}</p>
+  </div>
+
 </div>
 

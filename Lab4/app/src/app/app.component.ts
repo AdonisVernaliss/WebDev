@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {ICard} from "./models/card";
+import {cards as data} from "./data/cards";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'App';
+
+  cards: ICard[] = data
 }
