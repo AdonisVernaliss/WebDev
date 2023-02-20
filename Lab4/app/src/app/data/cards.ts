@@ -3,7 +3,7 @@ import {ICard} from "../models/card";
 export const cards: ICard[] = [
   {
     id: 1,
-    title: 'Smartphone Samsung Galaxy A23 6 ГБ/128 ГБ black',
+    title: 'Smartphone Samsung Galaxy A23 6 GB/128 GB black',
     price: 104675,
     description: 'Discover more possibilities.' +
       ' Take amazing selfies with an 8 MP front camera and a bokeh effect — less background, more of you!' +
@@ -15,7 +15,8 @@ export const cards: ICard[] = [
     rating: {
       rate: 4.7,
       count: 120
-    }
+    },
+    link: 'https://kaspi.kz/shop/p/samsung-galaxy-a23-6-gb-128-gb-chernyi-104348541/?c=750000000#!/item'
   },
   {
     id: 2,
@@ -28,7 +29,8 @@ export const cards: ICard[] = [
     rating: {
       rate: 4.1,
       count: 109
-    }
+    },
+    link: 'https://kaspi.kz/shop/p/smart-kol-tso-iqibla-zikr1-belyi-105729890/?c=750000000#!/item'
   },
   {
     id: 3,
@@ -43,7 +45,8 @@ export const cards: ICard[] = [
     rating: {
       rate: 3.8,
       count: 89
-    }
+    },
+    link: 'https://kaspi.kz/shop/p/svc-av9-12-s-103102030/?c=750000000#!/item'
   },
   {
     id: 4,
@@ -55,7 +58,8 @@ export const cards: ICard[] = [
     rating: {
       rate: 4.5,
       count: 103
-    }
+    },
+    link: 'https://kaspi.kz/shop/p/sibshnur-dzhutovaja-d-06-mm-20-m-nagruzka-150-kgs-104513082/?c=750000000#!/item'
   },
   {
     id: 5,
@@ -69,7 +73,8 @@ export const cards: ICard[] = [
     rating: {
       rate: 4.2,
       count: 83
-    }
+    },
+    link: 'https://kaspi.kz/shop/p/kuskovoe-mylo-hozjaistvennoe-vesna-klassicheskoe-hozjaistvennoe-72-140-g-102953686/?c=750000000#!/item'
   },
   {
     id: 6,
@@ -82,7 +87,8 @@ export const cards: ICard[] = [
     rating: {
       rate: 3.2,
       count: 105
-    }
+    },
+    link: 'https://kaspi.kz/shop/p/taburet-zeta-imp-tv-056116-45x35x35-sm-korichnevyi-100345101/?c=750000000#!/item'
   },
   {
     id: 7,
@@ -97,7 +103,8 @@ export const cards: ICard[] = [
     rating: {
       rate: 4.7,
       count: 55
-    }
+    },
+    link: 'https://kaspi.kz/shop/p/rondell-santoku-cascara-rd-687-lezvie-stal--16100042/?c=750000000#!/item'
   },
   {
     id: 8,
@@ -114,7 +121,8 @@ export const cards: ICard[] = [
     rating: {
       rate: 4.9,
       count: 250
-    }
+    },
+    link: 'https://kaspi.kz/shop/p/apple-macbook-air-13-mgn63-seryi-100797845/?c=750000000#!/item'
   },
   {
     id: 9,
@@ -133,7 +141,8 @@ export const cards: ICard[] = [
     rating: {
       rate: 4.3,
       count: 213
-    }
+    },
+    link: 'https://kaspi.kz/shop/p/apple-imac-24-2021-24m182sux-mgtf3-serebristyi-101530799/?c=750000000#!/item'
   },
   {
     id: 10,
@@ -149,9 +158,8 @@ export const cards: ICard[] = [
     rating: {
       rate: 5.0,
       count: 333
-    }
+    },
+    link: 'https://kaspi.kz/shop/p/figurka-sed-moe-nebo-anime-naruto-5492-7-sm-104106402/?c=750000000#!/item'
   },
-
-
-
+  
 ]

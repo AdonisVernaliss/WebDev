@@ -4,5 +4,6 @@ export interface ICard { image: string;
   description: string;
   id: number;
   title: string;
-  category: string
+  category: string;
+  link: string
 }

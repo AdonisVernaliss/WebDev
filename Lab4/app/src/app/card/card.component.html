@@ -10,5 +10,11 @@
     <p>Rate: {{card.rating.rate | number: '1.2-3'}}</p>
   </div>
 
+  <div class="share-button">
+    <button (click)="shareOnWhatsapp(card)">Share on Whatsapp</button>
+    <button (click)="shareOnTelegram(card)">Share on Telegram</button>
+  </div>
+
+
 </div>
 
