@@ -12,3 +12,11 @@ export class AppComponent {
 
   cards: ICard[] = data
 }
+
+
+//  constructor(private http: HttpClient) {
+//   }
+//
+//   getAll(): Observable<ICard[]> {
+//     return this.http.get<ICard[]>('http://kaspi.kz/shop/c/baby%20care/brand-chicco/')
+//   }

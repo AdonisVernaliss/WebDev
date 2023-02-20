@@ -7,7 +7,7 @@
 
   <div *ngIf="details">
     <p>{{ card.description }}</p>
-    <p>Rate: {{card.rating.rate}}</p>
+    <p>Rate: {{card.rating.rate | number: '1.2-3'}}</p>
   </div>
 
 </div>
