@@ -13,13 +13,13 @@ export class CardComponent {
   details = false
 
   shareOnWhatsapp(card: ICard) {
-    const message = `Check out this product: ${card.title} for ${card.price} at ${card.link}`;
+    const message = `Check out this product: ${card.title} for ${card.price}₸ at ${card.link}`;
     const url = `whatsapp://send?text=${encodeURIComponent(message)}`;
     window.location.href = url;
   }
 
   shareOnTelegram(card: ICard) {
-    const message = `Check out this product: ${card.title} for ${card.price} at ${card.link}`;
+    const message = `Check out this product: ${card.title} for ${card.price}₸ at ${card.link}`;
     const url = `tg://msg?text=${encodeURIComponent(message)}`;
     window.location.href = url;
   }

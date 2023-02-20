@@ -1,19 +1,20 @@
 <div class="card">
-  <img [src]="card.image" [alt]="card.title" width="100">
+  <img [src]="card.image" [alt]="card.title" width="200">
   <h2>{{ card.title }}</h2>
-  <p> Price: {{ card.price | currency: 'KZ ' }}</p>
+  <p> Price: {{ card.price | currency: '₸' }}</p>
 
   <button (click)="details = !details">{{ details ? 'Hide' : 'Show'}} Details</button>
 
   <div *ngIf="details">
     <p>{{ card.description }}</p>
     <p>Rate: {{card.rating.rate | number: '1.2-3'}}</p>
+    <div class="share-button">
+      <button (click)="shareOnWhatsapp(card)">Share on Whatsapp</button>
+      <button (click)="shareOnTelegram(card)">Share on Telegram</button>
+    </div>
   </div>
 
-  <div class="share-button">
-    <button (click)="shareOnWhatsapp(card)">Share on Whatsapp</button>
-    <button (click)="shareOnTelegram(card)">Share on Telegram</button>
-  </div>
+
 
 
 </div>

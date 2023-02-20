@@ -12,7 +12,8 @@ h2 {
 }
 
 button {
-  background-color: rgba(72, 61, 139, 0.62);
+  background-color: #ddd;
+  border: 1px solid rgba(160, 160, 160, 0.90);
   padding: 11px;
   border-radius: 10px;
 }
@@ -20,9 +21,11 @@ button {
 button:hover {
   text-decoration: none;
   cursor: pointer;
-  background-color: rgba(100, 149, 237, 0.93);
+  background-color: rgba(128, 128, 128, 0.44);
 }
 
 .share-button {
+  text-align: center;
+
 }
 
