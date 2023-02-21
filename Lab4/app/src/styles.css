@@ -11,3 +11,21 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 15rem;
 }
+
+.top-bar {
+  width: 100%;
+  background-color: #1976d2;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 4rem;
+  justify-content: center;
+}
+
+
+.top-bar h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
