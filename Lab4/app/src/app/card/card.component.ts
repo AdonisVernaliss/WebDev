@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core'
-import {ICard} from "../models/card";
+import {ICard} from "../data/cards";
 
 @Component({
   templateUrl: './card.component.html',

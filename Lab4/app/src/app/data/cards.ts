@@ -1,4 +1,12 @@
-import {ICard} from "../models/card";
+export interface ICard { image: string;
+  price: number;
+  rating: { rate: number; count: number };
+  description: string;
+  id: number;
+  title: string;
+  category: string;
+  link: string
+}
 
 export const cards: ICard[] = [
   {
@@ -161,5 +169,5 @@ export const cards: ICard[] = [
     },
     link: 'https://kaspi.kz/shop/p/figurka-sed-moe-nebo-anime-naruto-5492-7-sm-104106402/?c=750000000#!/item'
   },
-  
+
 ]

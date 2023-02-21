@@ -1,4 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
-html {
+* {
   font-family: AkayaTelivigala;
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15rem;
 }
