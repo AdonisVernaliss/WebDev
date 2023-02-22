@@ -7,9 +7,7 @@
 }
 
 .card-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15rem;
+  border: 1px solid black;
 }
 
 .top-bar {
