@@ -1,0 +1,12 @@
+<h2>Products</h2>
+<ul>
+    <li><button [routerLink]='["/category","Tech"]'> Tech</button></li>
+    <li><button [routerLink]='["/category","Game"]'> Game</button></li>
+    <li><button [routerLink]='["/category","Food"]'> Food</button></li>
+    <li><button [routerLink]='["/category","Etc"]'> Etc</button></li>
+</ul>
+<div class="list-block">
+    <div *ngFor="let card of itemList">
+        <app-card [card]="card" (remove)="onDeleteItem($event)"></app-card>
+    </div>
+</div>
