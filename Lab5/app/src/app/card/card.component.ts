@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core'
+import {Component, EventEmitter, Input} from '@angular/core'
 import {ICard} from "../data/cards";
 
 @Component({
@@ -7,20 +7,21 @@ import {ICard} from "../data/cards";
   styleUrls: ['./card.component.css'],
   interpolation: ['{{', '}}']
 })
+
 export class CardComponent {
   @Input() card: ICard
-  @Output() remove = new EventEmitter();
 
   details = false
+
   deleteItm = true
 
   like: number = 0;
 
-  likeIncr(){
+  likeIncr() {
     this.like++;
   }
 
-  deleteItem(){
+  deleteItem() {
     this.deleteItm = false;
   }
 
@@ -35,4 +36,5 @@ export class CardComponent {
     const url = `tg://msg?text=${encodeURIComponent(message)}`;
     window.location.href = url;
   }
+
 }

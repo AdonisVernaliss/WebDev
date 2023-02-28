@@ -6,11 +6,7 @@ import { AppComponent } from './app.component';
 import { CardComponent } from "./card/card.component";
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
-import { RouterModule, Routes } from "@angular/router";
 
-const appRoutes: Routes = [
-  { path: '', component: AppComponent },
-];
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,9 +17,7 @@ const appRoutes: Routes = [
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(appRoutes)
   ],
-  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })
