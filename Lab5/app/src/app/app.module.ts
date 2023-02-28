@@ -4,15 +4,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CardComponent } from "./card/card.component";
-import {HttpClientModule} from "@angular/common/http";
-import { ProductListComponent } from './productList/productList.component';
-import {FormsModule} from "@angular/forms";
-import {RouterModule} from "@angular/router";
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
+import { RouterModule, Routes } from "@angular/router";
 
+const appRoutes: Routes = [
+  { path: '', component: AppComponent },
+];
 @NgModule({
   declarations: [
     AppComponent,
-    ProductListComponent,
     CardComponent,
   ],
   imports: [
@@ -20,11 +21,9 @@ import {RouterModule} from "@angular/router";
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
-      // { path: 'category/:name', component: FilterComponent}
-    ])
+    RouterModule.forRoot(appRoutes)
   ],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -2,12 +2,12 @@
   font-family: AkayaTelivigala;
   color: #616161;
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .card-container {
-  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10rem;
 }
 
 .top-bar {
@@ -36,6 +36,7 @@ a {
 
 a:hover {
   opacity: 0.8;
+  transition: all 0.3s ease-in-out;
 }
 
 .fancy-button {

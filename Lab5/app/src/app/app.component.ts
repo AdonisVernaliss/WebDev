@@ -11,6 +11,18 @@ export class AppComponent {
   title = 'App';
 
   cards: ICard[] = data
+
+  selectedCategory: string = '';
+
+  filterCards(category: string) {
+    this.selectedCategory = category;
+    if (category === '') {
+      this.cards = data;
+    } else {
+      this.cards = data.filter(card => card.category === category);
+    }
+  }
+
 }
 
 

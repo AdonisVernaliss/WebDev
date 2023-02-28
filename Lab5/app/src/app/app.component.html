@@ -3,6 +3,17 @@
   <a routerLink="/card" class="button fancy-button"></a>
 </div>
 
+<div class="filter">
+  <label>Filter by category:</label>
+  <select [(ngModel)]="selectedCategory" (change)="filterCards(selectedCategory)">
+    <option value="">All</option>
+    <option value="Technique">Technique</option>
+    <option value="Clothing">Clothing</option>
+    <option value="Products">Products</option>
+    <option value="Etc">Etc</option>
+  </select>
+</div>
+
 <div class="container">
 <!--  [(ngModel)]="pattern"-->
 <!--  <app-card [card]="cards[0]"></app-card>-->
