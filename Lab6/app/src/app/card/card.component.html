@@ -1,0 +1,24 @@
+<div *ngIf="deleteItm">
+
+<div class="card">
+  <button class="remove" (click)="deleteItem()">Delete</button>
+
+  <img [src]="card.image" [alt]="card.title" width="200">
+  <h2>{{ card.title }}</h2>
+  <p> Price: {{ card.price | currency: '₸' }}</p>
+
+  <button (click)="details = !details">{{ details ? 'Hide' : 'Show'}} Details</button>
+
+  <div *ngIf="details">
+    <p>{{ card.description }}</p>
+    <p>Rate: {{card.rating.rate | number: '1.2-3'}}</p>
+    <div class="share-button">
+      <button (click)="shareOnWhatsapp(card)">Share on Whatsapp</button>
+      <button (click)="shareOnTelegram(card)">Share on Telegram</button>
+    </div>
+  </div>
+
+  <button (click)="likeIncr()" id="like-button">Like {{this.like}} </button>
+
+</div>
+</div>

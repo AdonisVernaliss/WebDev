@@ -1,0 +1,23 @@
+.filter {
+  text-align: center;
+  margin-top: 25px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.filter label {
+  margin-right: 10px;
+}
+
+.filter select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.filter select:hover {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}

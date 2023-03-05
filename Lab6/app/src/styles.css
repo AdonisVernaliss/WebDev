@@ -1,0 +1,47 @@
+* {
+  /*font-family: AkayaTelivigala;*/
+  color: #616161;
+  box-sizing: border-box;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.top-bar {
+  width: 100%;
+  background-color: #1976d2;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 5rem;
+  justify-content: center;
+}
+
+
+.top-bar h1 {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+a {
+  cursor: pointer;
+  color: #1976d2;
+  text-decoration: none;
+  margin: 30px;
+}
+
+a:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
+.fancy-button {
+  background-color: white;
+  color: #1976d2;
+}
+
+

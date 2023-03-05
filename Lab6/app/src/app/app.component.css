@@ -1,0 +1,10 @@
+h1 {
+  text-align: center;
+}
+
+.time p{
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}

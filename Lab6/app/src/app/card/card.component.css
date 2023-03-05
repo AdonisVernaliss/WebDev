@@ -1,0 +1,45 @@
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+h2 {
+  margin-bottom: .5rem;;
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  border: 1px solid rgba(160, 160, 160, 0.90);
+  padding: 11px;
+  border-radius: 10px;
+}
+
+button:hover {
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgba(25, 118, 210, 0.62);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.share-button {
+  text-align: center;
+}
+
+#like-button{
+  margin: 10px;
+  height: 33px;
+}
+
+.remove{
+  background: crimson;
+  margin: 10px;
+}
+
+.remove:hover {
+  background-color: rgba(220, 20, 60, 0.63);
+}
