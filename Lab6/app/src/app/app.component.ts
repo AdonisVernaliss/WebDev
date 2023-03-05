@@ -9,12 +9,6 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   title = 'App';
-  time: string;
-  constructor() {
-    setInterval(()=>{
-      this.time = new Date().toLocaleTimeString();
-    }, 1000)
-  }
 
 }
 

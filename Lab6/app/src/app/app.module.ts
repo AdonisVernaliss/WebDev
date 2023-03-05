@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { AlbumsComponent } from './albums/albums.component';
 import { AlbumDetailComponent } from './album-detail/album-detail.component';
 import { AlbumPhotosComponent } from './album-photos/album-photos.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
@@ -30,6 +31,7 @@ const appRoutes: Routes = [
     AlbumsComponent,
     AlbumDetailComponent,
     AlbumPhotosComponent,
+    TopBarComponent,
   ],
   imports: [
     BrowserModule,
