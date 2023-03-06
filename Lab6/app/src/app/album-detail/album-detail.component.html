@@ -1,1 +1,14 @@
 <app-top-bar></app-top-bar>
+<div *ngIf="album">
+  <div>Title: {{ album.title }}</div>
+  <div>ID: {{ album.id }}</div>
+  <br>
+
+  <button (click)="onEdit()" *ngIf="!isEditing">Edit</button>
+  <button (click)="onSave()" *ngIf="isEditing">Save</button>
+  <input [(ngModel)]="editedTitle" *ngIf="isEditing" placeholder="Enter new title">
+  <br><br>
+
+  <button (click)="onPhotosClick()">Photos</button>
+  <button (click)="onBackClick()">Return back</button>
+</div>

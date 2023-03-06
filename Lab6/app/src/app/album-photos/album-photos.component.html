@@ -1,1 +1,9 @@
 <app-top-bar></app-top-bar>
+<ul>
+  <li *ngFor="let photo of photos">
+    <div>{{ photo.title }}</div>
+    <img [src]="photo.url" [alt]="photo.title">
+  </li>
+</ul>
+
+<button (click)="onBackClick()">Return back</button>

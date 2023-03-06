@@ -9,18 +9,18 @@ import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { AlbumsComponent } from './albums/albums.component';
 import { AlbumDetailComponent } from './album-detail/album-detail.component';
 import { AlbumPhotosComponent } from './album-photos/album-photos.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { AlbumListComponent } from './album-list/album-list.component';
 
 const appRoutes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent},
-  {path: 'albums', component: AlbumsComponent},
-  {path: 'album-detail', component: AlbumDetailComponent},
-  {path: 'album-photos', component: AlbumPhotosComponent},
+  {path: 'albums', component: AlbumListComponent},
+  { path: 'albums/:id', component: AlbumDetailComponent },
+  { path: 'albums/:id/photos', component: AlbumPhotosComponent }
 ]
 @NgModule({
   declarations: [
@@ -28,10 +28,10 @@ const appRoutes: Routes = [
     CardComponent,
     HomeComponent,
     AboutComponent,
-    AlbumsComponent,
     AlbumDetailComponent,
     AlbumPhotosComponent,
     TopBarComponent,
+    AlbumListComponent,
   ],
   imports: [
     BrowserModule,

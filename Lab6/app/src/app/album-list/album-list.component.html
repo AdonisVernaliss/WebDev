@@ -1,0 +1,14 @@
+<app-top-bar></app-top-bar>
+<ul>
+  <li *ngFor="let album of albums">
+    {{ album.title }}
+    <button (click)="onDeleteAlbum(album.id)">Delete</button>
+    <button (click)="onEditAlbum(album.id, 'New Album Title')">Reset Title</button>
+    <a [routerLink]="['/albums', album.id]">View</a>
+  </li>
+</ul>
+
+<form (submit)="onCreateAlbum(newAlbumTitle.value)">
+  <input #newAlbumTitle type="text" placeholder="New album title">
+  <button type="submit">Create</button>
+</form>
